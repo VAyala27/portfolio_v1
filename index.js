@@ -12,18 +12,18 @@ var data = [{
     name: "Drone",
     subname: "Single Page Website",
     img: "https://i.postimg.cc/x8PzKcVt/Screen-Shot-2020-10-22-at-1-57-50-AM.png",
-    description: "A single page website about drones. It has a bit of dyanmic data and some animation.",
-    technogies: "HTML, CSS, Javascript, jQuery",
+    description: "A remade of a drone website using",
+    technogies: "HTML, CSS, Bootstrap, Javascript, jQuery",
     category: "Websites",
     code: "https://github.com/VAyala27/Drone",
-    link: "https://drone-page.netlify.app/"
+    link: "https://vayala27.github.io/Drone/"
   },
   {
     name: "Steam Restaurant & Drinks",
     subname: "Restaurant",
     img: "https://i.postimg.cc/qqrKh2SN/Screen-Shot-2020-10-22-at-1-57-32-AM.png",
-    description: "A single page website about restaurant. It is a remake of a website just including dynamic data. When users click on a category the menu will change.",
-    technogies: "HTML, CSS, Javascript, jQuery",
+    description: "A remake of a restaurant using dyanmic data for the menu item and testimonals. It also contains smooth scrolling which means a user clicks on the link it move to that location smoothly.",
+    technogies: "HTML, CSS, Bootstrap, Javascript, jQuery",
     category: "Websites",
     code: "https://github.com/VAyala27/Restaurant",
     link: "https://steam-restaurant.netlify.app/"
@@ -68,6 +68,16 @@ var data = [{
     code: "https://github.com/VAyala27/Bitnami",
     link: "https://vayala27.github.io/Bitnami/"
   },
+  {
+    name: "Adobe XD Email",
+    subname: "Promotional",
+    img: "https://i.postimg.cc/sDN2f9Hy/adobe-xd-email.png",
+    description: "Remake of a Adobe XD email by using",
+    technologies: "HTML, CSS",
+    category: "Emails",
+    code: "https://github.com/VAyala27/Adobe-xd-email",
+    link: "https://vayala27.github.io/Adobe-xd-email/"
+  }
 ];
 
 
