@@ -26,7 +26,7 @@ var data = [{
     technogies: "HTML, CSS, Bootstrap, Javascript, jQuery",
     category: "Websites",
     code: "https://github.com/VAyala27/Restaurant",
-    link: "https://steam-restaurant.netlify.app/"
+    link: "https://vayala27.github.io/Restaurant/"
   },
   {
     name: "Rent-Cars",
