@@ -55,8 +55,8 @@ var data = [{
     description: "Remade a responsive steam transactional email by using",
     technogies: "HTML, CSS",
     category: "Emails",
-    code: "https://github.com/VAyala27/Electro-Email",
-    link: "https://vayala27.github.io/Electro-Email/"
+    code: "https://github.com/VAyala27/steam-email",
+    link: "https://vayala27.github.io/steam-email/"
   },
   {
     name: "Bitnami",
