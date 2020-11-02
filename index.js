@@ -26,17 +26,17 @@ var data = [{
     technogies: "HTML, CSS, Bootstrap, Javascript, jQuery",
     category: "Websites",
     code: "https://github.com/VAyala27/Restaurant",
-    link: "https://vayala27.github.io/Restaurant/"
+    link: "https://steam-restaurant.netlify.app/"
   },
   {
-    name: "Rent-Cars",
+    name: "Apple",
     subname: "Promotional",
-    img: "https://i.postimg.cc/xCQqqQ49/rentcar.png",
-    description: " Remade a responsive Labor day car sale email by using",
+    img: "https://i.postimg.cc/28MdYNTh/apple-email.png",
+    description: " Remade a responsive iPad Air by apple email by using",
     technogies: "HTML, CSS",
     category: "Emails",
-    code: "https://github.com/VAyala27/Rent-Car-Email",
-    link: "https://vayala27.github.io/Rent-Car-Email/"
+    code: "https://github.com/VAyala27/apple-email",
+    link: "https://vayala27.github.io/apple-email/"
   },
   {
     name: "Google-Play",
@@ -49,10 +49,10 @@ var data = [{
     link: "https://vayala27.github.io/googleplay-email/"
   },
   {
-    name: "Electro",
+    name: "Steam",
     subname: "Transactional",
-    img: "https://i.postimg.cc/x1kX4tmV/electro.png",
-    description: "Remade a responsive ordering email by using",
+    img: "https://i.postimg.cc/jSfHd3k9/steam-email.png",
+    description: "Remade a responsive steam transactional email by using",
     technogies: "HTML, CSS",
     category: "Emails",
     code: "https://github.com/VAyala27/Electro-Email",
@@ -67,6 +67,26 @@ var data = [{
     category: "Emails",
     code: "https://github.com/VAyala27/Bitnami",
     link: "https://vayala27.github.io/Bitnami/"
+  },
+  {
+    name: "Mailchimp",
+    subname: "",
+    img: "https://i.postimg.cc/LsBjjYS3/mailchimp-email.png",
+    description: "Remade a responsive mailchimp email by using",
+    technogies: "HTML, CSS",
+    category: "Emails",
+    code: "https://github.com/VAyala27/mailchimp-email",
+    link: "https://vayala27.github.io/mailchimp-email/"
+  },
+  {
+    name: "Heroku",
+    subname: "Welcome",
+    img: "https://i.postimg.cc/43TzKvD3/heroku-email.png",
+    description: "Remade a responsive Heroku welcoming email by using",
+    technogies: "HTML, CSS",
+    category: "Emails",
+    code: "https://github.com/VAyala27/heroku-email",
+    link: "https://vayala27.github.io/heroku-email/"
   },
   {
     name: "Adobe XD Email",
@@ -116,7 +136,7 @@ function toggle_onclick($win, $navbar, width) {
 }
 
 var typed = new Typed("#typed", {
-  strings: ["Html Email Developer"],
+  strings: ["Email Developer"],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true
