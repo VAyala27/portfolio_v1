@@ -136,7 +136,7 @@ function toggle_onclick($win, $navbar, width) {
 }
 
 var typed = new Typed("#typed", {
-  strings: ["Email Developer"],
+  strings: ["Front End Developer"],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true
