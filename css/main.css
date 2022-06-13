@@ -235,6 +235,7 @@ section {
 
 .wrapper .hero_container {
   display: flex;
+  flex-wrap: wrap;
   grid-gap: 5rem;
   align-items: center;
 }
@@ -373,7 +374,7 @@ section {
   background: #f75477;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 736px) {
   .main-content {
     margin-left: 0 !important;
   }
@@ -458,8 +459,9 @@ section {
     flex-direction: column;
   }
   main .hero_content {
-    order: 2;
+    order: 2 !important;
     height: 100% !important;
+    width: 100% !important;
   }
   main .hero_content h1 {
     font-size: 30px !important;
@@ -472,10 +474,14 @@ section {
     padding: .5rem .7rem !important;
   }
   main .hero_img {
-    order: 1;
+    order: 1 !important;
+    width: 100% !important;
   }
   main .skills .skill img {
     width: 100px;
+  }
+  main #work .work-list {
+    flex-direction: column !important;
   }
   main #work .work-list .work-item {
     font-size: 18px;
@@ -493,118 +499,83 @@ section {
 }
 
 @media screen and (max-width: 1280px) {
-  .hero {
-    height: 100% !important;
+  .dark-overlay.active {
+    display: block !important;
+    z-index: 100;
   }
   .sidebar {
-    max-width: 300px;
+    max-width: 350px;
     top: 0;
-    left: 0;
     height: 100%;
+    left: -1000px !important;
     transition: left 0.5s linear;
     width: 100% !important;
     position: fixed !important;
     z-index: 1000;
     padding: 1.5rem !important;
-    padding-top: 20% !important;
     position: relative;
   }
-  .sidebar .closeBtn {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 36px;
-    display: block !important;
-    transition: 0.3s ease-in-out;
-    z-index: 1000 !important;
-  }
-  .sidebar .closeBtn:hover {
-    color: #C1BFBF;
-  }
-  .sidebar .sub-header h2 {
-    font-size: 16px !important;
-    margin-bottom: 0 !important;
-  }
-  .sidebar .contact_link {
-    font-size: 14px !important;
+  .sidebar h2 {
+    font-size: 20px;
   }
   .sidebar p {
-    font-size: 14px !important;
+    font-size: 16px !important;
+  }
+  .sidebar .contact_item i {
+    font-size: 16px;
+  }
+  .sidebar .contact_item a {
+    font-size: 16px !important;
   }
   .sidebar.is-active {
     left: 0 !important;
   }
-  .dark-overlay.active {
-    display: block !important;
-    z-index: 100;
+  .main-content {
+    margin-left: 0 !important;
   }
-  main .main-content {
-    width: 100%;
-  }
-  main .header_content {
-    flex-wrap: wrap;
+  .main-content .header_content {
     align-items: center;
   }
-  main .header_content #toggle {
-    font-size: 16px;
-    cursor: pointer;
+  .main-content .header_content h2 {
+    font-size: 18px;
+  }
+  .main-content .header_content #toggle {
     display: block !important;
-    transition: color .3s ease-in-out;
   }
-  main .header_content #toggle:hover {
-    color: #A9A9A9;
-  }
-  main .header_content .title {
-    order: 3;
-    align-self: flex-end;
-    width: 100%;
-    margin-top: 1rem;
-    font-size: 16px;
-  }
-  main .header_content ul {
-    order: 2;
-  }
-  main .header_content .contact-icons li a i {
-    font-size: 18px !important;
-  }
-  main .hero {
+  .main-content .hero {
     height: 100% !important;
   }
-  main .hero_container {
-    flex-direction: column;
+  .main-content .hero_container {
+    grid-gap: 0;
   }
-  main .hero_content {
-    order: 2;
-    height: 100% !important;
-  }
-  main .hero_content h1 {
-    font-size: 24px !important;
-  }
-  main .hero_content h3 {
-    font-size: 18px !important;
-  }
-  main .hero_content .btn {
-    font-size: 14px !important;
-    padding: .5rem .7rem !important;
-  }
-  main .hero_img {
+  .main-content .hero_content {
     order: 1;
+    width: 50%;
+    align-self: flex-start;
+    margin-top: 3rem;
   }
-  main .skills .skill img {
-    width: 100px;
+  .main-content .hero_content h1 {
+    font-size: 32px;
   }
-  main #work .work-list .work-item {
+  .main-content .hero_content h3 {
+    font-size: 20px;
+  }
+  .main-content .hero_content .btn {
+    padding: .5rem .7rem;
     font-size: 16px;
   }
-  main #work .work-container h4,
-  main #work .work-container h6 {
-    padding: 1rem 0 0;
+  .main-content .hero_img {
+    order: 2;
+    width: 50%;
   }
-  main #work .work-container h4 {
-    font-size: 22px !important;
+  .main-content .skills .skill img {
+    max-width: 100px !important;
   }
-  main #work .work-container h6 {
-    font-size: 16px !important;
+}
+
+@media screen and (max-width: 1680px) {
+  .hero_container {
+    flex-wrap: nowrap !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
