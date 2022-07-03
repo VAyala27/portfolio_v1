@@ -20,7 +20,7 @@ var data = [{
         img: "https://s8.gifyu.com/images/pure_digital.gif",
         category: "Websites",
         code: "https://github.com/VAyala27/Pure_Digital",
-        link: "https://puredigital.netlify.app/"
+        link: "https://puredigital.netlify.app/home"
     },
     {
         name: "Bugersio",
@@ -28,7 +28,7 @@ var data = [{
         img: "https://s8.gifyu.com/images/burgersio.gif",
         category: "Websites",
         code: "https://github.com/VAyala27/Burgersio",
-        link: "https://burgersio.netlify.app/"
+        link: "https://burgersio.netlify.app/home"
     },
     {
         name: "Apple",
