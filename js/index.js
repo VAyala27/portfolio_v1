@@ -182,3 +182,5 @@ function displayMenuButtons() {
         });
     });
 }
+
+var scroll = new SmoothScroll('a[href*="#"]');
