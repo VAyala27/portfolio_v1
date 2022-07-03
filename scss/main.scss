@@ -45,7 +45,7 @@ section {
 .main-content {
     order: 2;
     height: 100%;
-    margin-left: 22.5rem !important;
+    margin-left: 25rem !important;
 }
 
 .dark-overlay {
@@ -188,6 +188,7 @@ section {
 
         &_container {
             display: flex;
+            flex-wrap: wrap;
             grid-gap: 5rem;
             align-items: center;
         }
@@ -331,7 +332,7 @@ section {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 736px) {
     .main-content {
         margin-left: 0 !important;
     }
@@ -447,8 +448,9 @@ section {
             }
 
             &_content {
-                order: 2;
+                order: 2 !important;
                 height: 100% !important;
+                width: 100% !important;
 
                 h1 {
                     font-size: 30px !important;
@@ -465,7 +467,8 @@ section {
             }
 
             &_img {
-                order: 1;
+                order: 1 !important;
+                width: 100% !important;
             }
         }
 
@@ -479,6 +482,8 @@ section {
 
         #work {
             .work-list {
+                flex-direction: column !important;
+
                 .work-item {
                     font-size: 18px;
                 }
@@ -504,52 +509,41 @@ section {
 }
 
 @media screen and (max-width: 1280px) {
-    .hero {
-        height: 100% !important;
+    .dark-overlay.active {
+        display: block !important;
+        z-index: 100;
     }
 
     .sidebar {
-        max-width: 300px;
+        max-width: 350px;
         top: 0;
-        left: 0;
         height: 100%;
+        left: -1000px !important;
         transition: left 0.5s linear;
         width: 100% !important;
         position: fixed !important;
         z-index: 1000;
         padding: 1.5rem !important;
-        padding-top: 20% !important;
         position: relative;
 
-        .closeBtn {
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            font-size: 36px;
-            display: block !important;
-            transition: 0.3s ease-in-out;
-            z-index: 1000 !important;
-
-            &:hover {
-                color: $light;
-            }
-        }
-
-        .sub-header {
-            h2 {
-                font-size: 16px !important;
-                margin-bottom: 0 !important;
-            }
-        }
-
-        .contact {
-            &_link {
-                font-size: 14px !important;
-            }
+        h2 {
+            font-size: 20px;
         }
 
         p {
-            font-size: 14px !important;
+            font-size: 16px !important;
+        }
+
+        .contact {
+            &_item {
+                i {
+                    font-size: 16px;
+                }
+
+                a {
+                    font-size: 16px !important;
+                }
+            }
         }
     }
 
@@ -557,52 +551,19 @@ section {
         left: 0 !important;
     }
 
-    .dark-overlay.active {
-        display: block !important;
-        z-index: 100;
-    }
-
-    main {
-        .main-content {
-            width: 100%;
-        }
+    .main-content {
+        margin-left: 0 !important;
 
         .header {
             &_content {
-                flex-wrap: wrap;
                 align-items: center;
 
+                h2 {
+                    font-size: 18px;
+                }
+
                 #toggle {
-                    font-size: 16px;
-                    cursor: pointer;
                     display: block !important;
-                    transition: color .3s ease-in-out;
-
-                    &:hover {
-                        color: $lightGray;
-                    }
-                }
-
-                .title {
-                    order: 3;
-                    align-self: flex-end;
-                    width: 100%;
-                    margin-top: 1rem;
-                    font-size: 16px;
-                }
-
-                ul {
-                    order: 2;
-                }
-
-                .contact-icons {
-                    li {
-                        a {
-                            i {
-                                font-size: 18px !important;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -611,62 +572,50 @@ section {
             height: 100% !important;
 
             &_container {
-                flex-direction: column;
+                grid-gap: 0;
             }
 
             &_content {
-                order: 2;
-                height: 100% !important;
+                order: 1;
+                width: 50%;
+                align-self: flex-start;
+                margin-top: 3rem;
 
                 h1 {
-                    font-size: 24px !important;
+                    font-size: 32px;
                 }
 
                 h3 {
-                    font-size: 18px !important;
+                    font-size: 20px;
                 }
 
                 .btn {
-                    font-size: 14px !important;
-                    padding: .5rem .7rem !important;
+                    padding: .5rem .7rem;
+                    font-size: 16px;
                 }
             }
 
+
             &_img {
-                order: 1;
+                order: 2;
+                width: 50%;
             }
         }
 
         .skills {
             .skill {
                 img {
-                    width: 100px;
+                    max-width: 100px !important;
                 }
             }
         }
+    }
+}
 
-        #work {
-            .work-list {
-                .work-item {
-                    font-size: 16px;
-                }
-            }
-
-            .work-container {
-
-                h4,
-                h6 {
-                    padding: 1rem 0 0;
-                }
-
-                h4 {
-                    font-size: 22px !important;
-                }
-
-                h6 {
-                    font-size: 16px !important;
-                }
-            }
+@media screen and (max-width: 1680px) {
+    .hero {
+        &_container {
+            flex-wrap: nowrap !important;
         }
     }
 }
