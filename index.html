@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -63,7 +63,7 @@
                 <span id="toggle" class="ml-2">
                   <i class="fa-solid fa-bars"></i>
                 </span>
-                <h2 class="title">Victor Ayala Web Developer</h2>
+                <h2 class="title">Victor Ayala Email Developer</h2>
                 <ul class="contact-icons">
                   <li>
                     <a href="mailto: victorayala1996@gmail.com">
@@ -83,7 +83,7 @@
             <div class="container">
               <div class="hero_container">
                 <div class="hero_content">
-                  <h1>Hi, I'm Victor Ayala a Web Developer</h1>
+                  <h1>Hi, I'm Victor Ayala an Email Developer</h1>
                   <h3>Let's build something</h3>
                   <a href="#work" class="btn">View Projects</a>
                 </div>
@@ -128,6 +128,15 @@
                     alt="bootstrap"
                   />
                 </div>
+
+                <div class="skill mb-4">
+                  <img
+                    class="img-fluid"
+                    src="https://i.postimg.cc/D0DZ9RX8/mailchimp-sq.jpg"
+                    alt="mailchimp"
+                  />
+                  <span class="skill-name d-block">Mailchimp</span>
+                </div>
               </div>
               <div class="row align-items-center justify-content-around">
                 <div class="skill mb-4">
@@ -154,11 +163,766 @@
               <div class="sub-header">
                 <h2>Projects</h2>
               </div>
-              <div
-                class="work-list d-flex flex-lg-row align-items-center justify-content-around pb-4 flex-sm-column"
-              ></div>
+              <ul class="work-tabs">
+                <li class="tab active" data-id="all">All</li>
+                <li class="tab" data-id="emails">Emails</li>
+                <li class="tab" data-id="websites">Websites</li>
+                <li class="tab" data-id="landing-pages">Landing Pages</li>
+              </ul>
 
-              <div class="row work-container"></div>
+              <!-- <div class="row work-container">
+
+              </div> -->
+
+              <div class="portfolio active" id="all">
+                <div class="row works">
+                  <!-- Start of Email -->
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/apple_email.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/apple-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://vayala27.github.io/apple-email/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Apple</h4>
+                    <h6 class="text-center">Promotional</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s4.gifyu.com/images/therealreal.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/the-real-real-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://the-real-real-promotional-email.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">The Real Real</h4>
+                    <h6 class="text-center">Promotional</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s1.gifyu.com/images/Burrow.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/burrow-2-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://burrow-promotional-email.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Burrow</h4>
+                    <h6 class="text-center">Promotional</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s1.gifyu.com/images/subscrption.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/subscription-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://subscription-newsletter.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Subscription Email</h4>
+                    <h6 class="text-center">Newsletter</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/bitnami_email.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Bitnami"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://vayala27.github.io/Bitnami/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Bitnami</h4>
+                    <h6 class="text-center">Newsletter</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s1.gifyu.com/images/mailchimp.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Mailchimp-receipt-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://mailchimp-transactional-email.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Mailchimp Receipt</h4>
+                    <h6 class="text-center">Transactional</h6>
+                  </div>
+                  <!-- End of Email -->
+
+                  <!-- Start of Website -->
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/supravi_v1.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Supravi-Version-1"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://vayala27.github.io/Supravi-Version-1/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Supravi_V1</h4>
+                    <h6 class="text-center">Ecommerce</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/supravi_v2.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Supravi-Version-2"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://supravi.netlify.app/" target="_blank">
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Supravi_V2</h4>
+                    <h6 class="text-center">Ecommerce</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/pure_digital.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Pure_Digital"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://puredigital.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Pure_Digital</h4>
+                    <h6 class="text-center">Digital Agency</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/burgersio.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Burgersio"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://burgersio.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Bugersio</h4>
+                    <h6 class="text-center">Restaurant</h6>
+                  </div>
+                  <!-- End of websites -->
+
+                  <!-- Start of Landing Page -->
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s4.gifyu.com/images/Modab134cefcba0bb2d5.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/moda"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://moda-landing-page.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Moda</h4>
+                    <h6 class="text-center">Landing Page</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s4.gifyu.com/images/horizons.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/horizons"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://horizons-landing-page.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Horizons</h4>
+                    <h6 class="text-center">Landing Page</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://i.postimg.cc/HLf16sQ8/la-carte.png')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/la-carte"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://la-carte-landing-page.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">La Carte</h4>
+                    <h6 class="text-center">Landing Page</h6>
+                  </div>
+                  <!-- End of Landing Page -->
+                </div>
+              </div>
+
+              <div class="portfolio" id="emails">
+                <div class="row works">
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/apple_email.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/apple-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://vayala27.github.io/apple-email/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Apple</h4>
+                    <h6 class="text-center">Promotional</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s4.gifyu.com/images/therealreal.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/the-real-real-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://the-real-real-promotional-email.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">The Real Real</h4>
+                    <h6 class="text-center">Promotional</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s1.gifyu.com/images/Burrow.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/burrow-2-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://burrow-promotional-email.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Burrow</h4>
+                    <h6 class="text-center">Promotional</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s1.gifyu.com/images/subscrption.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/subscription-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://subscription-newsletter.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Subscription Email</h4>
+                    <h6 class="text-center">Newsletter</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/bitnami_email.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Bitnami"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://vayala27.github.io/Bitnami/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Bitnami</h4>
+                    <h6 class="text-center">Newsletter</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s1.gifyu.com/images/mailchimp.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Mailchimp-receipt-email"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://mailchimp-transactional-email.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Mailchimp Receipt</h4>
+                    <h6 class="text-center">Transactional</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio" id="websites">
+                <div class="row works">
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/supravi_v1.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Supravi-Version-1"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://vayala27.github.io/Supravi-Version-1/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Supravi_V1</h4>
+                    <h6 class="text-center">Ecommerce</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/supravi_v2.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Supravi-Version-2"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://supravi.netlify.app/" target="_blank">
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Supravi_V2</h4>
+                    <h6 class="text-center">Ecommerce</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/pure_digital.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Pure_Digital"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://puredigital.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Pure_Digital</h4>
+                    <h6 class="text-center">Digital Agency</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s8.gifyu.com/images/burgersio.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/Burgersio"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://burgersio.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Bugersio</h4>
+                    <h6 class="text-center">Restaurant</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio" id="landing-pages">
+                <div class="row works">
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s4.gifyu.com/images/Modab134cefcba0bb2d5.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/moda"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://moda-landing-page.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Moda</h4>
+                    <h6 class="text-center">Landing Page</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://s4.gifyu.com/images/horizons.gif')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/horizons"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://horizons-landing-page.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">Horizons</h4>
+                    <h6 class="text-center">Landing Page</h6>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                      class="work-wrap"
+                      style="
+                        z-index: 0;
+                        object-fit: cover;
+                        background: url('https://i.postimg.cc/HLf16sQ8/la-carte.png')
+                          no-repeat top/cover;
+                      "
+                    >
+                      <div class="work-links">
+                        <a
+                          href="https://github.com/VAyala27/la-carte"
+                          target="_blank"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          href="https://la-carte-landing-page.netlify.app/"
+                          target="_blank"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="text-center">La Carte</h4>
+                    <h6 class="text-center">Landing Page</h6>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </div>
@@ -167,8 +931,8 @@
     </main>
   </body>
   <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"
   ></script>
   <script
@@ -182,5 +946,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script src="js/index.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/index.js"></script>
 </html>
